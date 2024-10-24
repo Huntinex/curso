@@ -21,10 +21,10 @@
 <meta class="metaTagTop" property="og:image" content="" id="social-image">
 <meta property="og:title" content="Ton Ribeiro | Voice Mastery Course">
 <meta property="og:description" content="">
-<!-- <meta property="og:url" content="https://www.theimperiumagency.com/ia-growth-call"> -->
+
 <meta property="og:type" content="website">
 <link rel="stylesheet" media="screen" href="https://app.clickfunnels.com/assets/lander.css">
-<link rel="canonical" href="https://www.theimperiumagency.com/ia-growth-call">
+<link rel="canonical" href="https://www.cursodecantoonline.com/">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -522,17 +522,49 @@
     </style>
     <script>
       var language;
-      function getLanguage(lang){
+      function getLanguage(lang) {
         $.ajax({
-          url: '/cursodecanto.github.io/language/' + lang+ '.json',
+          url: '/cursodecanto.github.io/language/' + lang + '.json',
           dataType: 'json', async: false, dataType: 'json',
           success: function (lang) { language = lang }
         });
       }
       function setLanguage(lang) {
-        getLanguage(lang);
-        $('#progressbar').text(language.progressbar);
-        
+        if (lang != "en") {
+          $("#courselink").attr('src',"https://pay.hotmart.com/X57289815H?checkoutMode=10");
+          getLanguage(lang);
+          $('#progressbar').text(language.progressbar);
+          $('#newsingers').text(language.newsingers);
+          $('#onestep').text(language.onestep);
+          $('#uoc').text(language.uoc);
+          $('#grt').text(language.grt);
+          $('#thebest').text(language.thebest);
+          $('#watch').text(language.watch);
+          $('#theform').text(language.theform);
+          $('#youranswerswill').text(language.youranswerswill);
+          $('#whocanwe').text(language.whocanwe);
+          $('#noxp').text(language.noxp);
+          $('#stransform').text(language.stransform);
+          $('#prosingers').text(language.prosingers);
+          $('#recent').text(language.recent);
+          $('#newsiii').text(language.newsiii);
+          $('#onlinesinging').text(language.onlinesinging);
+          $('#grtgrt').text(language.grtgrt);
+          $('#endgame').text(language.endgame);
+          $('#happyclients').text(language.happyclients);
+          $('#justly').text(language.justly);
+          $('#persoxx').text(language.persoxx);
+          $('#provxx').text(language.provxx);
+          $('#xpxp').text(language.xpxp);
+          $('#richxx').text(language.richxx);
+          $('#flexxx').text(language.flexxx);
+          $('#advxx').text(language.advxx);
+          $('#effxx').text(language.effxx);
+          $('#highlightxx').text(language.highlightxx);
+        }else{
+          $("#courselink").attr('src',"https://pay.hotmart.com/J94292411O?checkoutMode=10");
+        }
+
       }
 
     </script>
@@ -788,8 +820,7 @@
                 style="margin-top: 0px; outline: none; cursor: pointer; display: block;" data-imagelink=""
                 aria-disabled="false">
 
-                <img src="./tonnn.png" class="elIMG ximg" width="57" data-imagelink=""
-                  style="margin-top: 24.5px;">
+                <img src="./tonnn.png" class="elIMG ximg" width="57" data-imagelink="" style="margin-top: 24.5px;">
               </div>
               <small style="font-size:22px">&nbsp;</small>
             </div>
@@ -820,11 +851,11 @@
             <div class="lang-dropdown">
               <div class="selecting-lang" id="English" onclick="setLanguage('en')"><img class="lang-flag"
                   src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png" />
-                <p class="lang-text inter-xx" >EN</p>
+                <p class="lang-text inter-xx">EN</p>
               </div>
               <div class="selecting-lang" id="Portuguese" onclick="setLanguage('pt')"><img class="lang-flag"
                   src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Brazil.png" />
-                <p class="lang-text inter-xx" >PT</p>
+                <p class="lang-text inter-xx">PT</p>
               </div>
             </div>
           </div>
@@ -957,11 +988,12 @@
                 style="text-align: center; font-size: 30px;" data-bold="inherit" contenteditable="false"
                 spellcheck="false">
                 <div>
-                  <b>NEW SINGERS & THOSE JUST STARTING OUT, THIS IS FOR YOU:</b>&nbsp;
+                  <b id="newsingers">NEW SINGERS & THOSE JUST STARTING OUT, THIS IS FOR YOU:</b>&nbsp;
                 </div>
-                <div style="font-family: Inter;" class="inter-xx">You're One Step Away From Transforming Your Voice
-                  <b>Fast</b> Using Our Course.
-                  <u><b>GUARANTEED</b></u>
+                <div style="font-family: Inter;" class="inter-xx"><span id="onestep">Você está a um passo de transformar
+                    sua voz</span>
+                  <b id="fast">Fast</b><span id="uoc"> Using Our Course.</span>
+                  <u><b id="grt">GUARANTEED</b></u>
                 </div>
               </div>
             </div>
@@ -971,8 +1003,8 @@
               style="margin-top: 10px; outline: none; cursor: pointer;" aria-disabled="false">
               <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_16"
                 style="text-align: center;font-size: 23px" data-bold="inherit" data-gramm="false"
-                contenteditable="false">The best part is… if you don’t get results (which is kind of impossible), we
-                don't get paid</h2>
+                contenteditable="false" id="thebest">The best part is… if you don’t get results (which is kind of
+                impossible), we don't get paid</h2>
             </div>
             <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_subheadline-71265"
               data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true"
@@ -1010,7 +1042,7 @@
                 style="text-align: center; font-size: 30px;" data-bold="inherit" data-gramm="false"
                 contenteditable="false">
                 <b>
-                  Step 1 of 2:</b> Watch Video
+                  Step 1 of 2:</b> <span id="watch">Watch Video</span>
               </h2>
               <small><br></small>
             </div>
@@ -1043,7 +1075,7 @@
                 style="text-align: center; font-size: 30px;" data-bold="inherit" data-gramm="false"
                 contenteditable="false">
                 <b>
-                  Step 2 of 2:</b>&nbsp;Fill out the form
+                  Step 2 of 2:</b>&nbsp;<span id="theform">Fill out the form</span>
               </h2>
             </div>
             <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_subheadline-51077"
@@ -1053,11 +1085,10 @@
               data-google-font="Poppins" aria-disabled="false">
               <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_14"
                 style="text-align: center; font-size: 20px;" data-bold="inherit" data-gramm="false"
-                contenteditable="false">Your answers will remain completely confidential and are used to prepare a
-                strategy for you prior to the call.</h2>
+                contenteditable="false" id="youranswerswill">Your answers will remain completely confidential.</h2>
             </div>
             <small><br></small>
-            <center><iframe src="https://pay.hotmart.com/J94292411O"
+            <center><iframe id="courselink" src="https://pay.hotmart.com/J94292411O"
                 style="position: relative;min-width:640px;height:1260px;"></iframe></center>
           </div>
         </div>
@@ -1080,7 +1111,7 @@
               spellcheck="false">
               <b>
               </b>
-              <div><b>Who Can We Help:&nbsp;</b></div>
+              <div><b id="whocanwe">Who Can We Help:</b>&nbsp;</div>
             </div>
           </div>
           <div class="de elSeperator elMargin0 ui-droppable de-editable" id="divider-39770" data-de-type="divider"
@@ -1107,8 +1138,8 @@
                 class="fa-fw fa_icon fa_prepended id-IconNode fas fa-check-circle"></i></font><span><span
                 data-page-element="ContentEditableNode" class="ne id-6Z-Xl9mE-114" data-align-selector=".elParagraph"
                 data-slot-name="default">
-                <font color="#ffbe27"></font><span class="id-6Z-9W6o5-68">&nbsp;People With No Singing Experience
-                  Pro</span></font><br class="id-6Z-9W6o5-70">
+                <font color="#ffbe27"></font>&nbsp;<span class="id-6Z-9W6o5-68" id="noxp">People With No Singing Experience
+span></font><br class="id-6Z-9W6o5-70">
               </span></span>
           </p>
           <!-- <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable"
@@ -1170,7 +1201,7 @@
                 class="fa-fw fa_icon fa_prepended id-IconNode fas fa-check-circle"></i></font><span><span
                 data-page-element="ContentEditableNode" class="ne id-6Z-Xl9mE-114" data-align-selector=".elParagraph"
                 data-slot-name="default">
-                <font color="#ffbe27"></font><span class="id-6Z-9W6o5-68">&nbsp;Singers Who Want To Transform</span>
+                <font color="#ffbe27"></font>&nbsp;<span class="id-6Z-9W6o5-68" id="stransform">Singers Who Want To Transform</span>
                 </font><br class="id-6Z-9W6o5-70">
               </span></span>
           </p>
@@ -1198,8 +1229,7 @@
                 class="fa-fw fa_icon fa_prepended id-IconNode fas fa-check-circle"></i></font><span><span
                 data-page-element="ContentEditableNode" class="ne id-6Z-Xl9mE-114" data-align-selector=".elParagraph"
                 data-slot-name="default">
-                <font color="#ffbe27"></font><span class="id-6Z-9W6o5-68">&nbsp;Pro Singers Ready To Level Up
-                  Pro</span></font><br class="id-6Z-9W6o5-70">
+                <font color="#ffbe27"></font>&nbsp;<span class="id-6Z-9W6o5-68" id="prosingers">Pro Singers Ready To Level Up</span></font><br class="id-6Z-9W6o5-70">
               </span></span>
           </p>
           <!-- <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-81271" data-de-type="headline"
@@ -1349,7 +1379,7 @@
                   contenteditable="false" spellcheck="false">
                   <b>
                   </b>
-                  <div><b>Recent Results We've Gotten For <b>New Singers & Those Just Starting Out</b> Just Like
+                  <div><b stlye="font-weight:500;" id="recent">Recent Results We've Gotten For </b><b id="newsiii" style="font-weight: 900;">New Singers & Those Just Starting Out</b><b stlye="font-weight:500;" id="justly"></b> Just Like
                       You:&nbsp;</b></div>
                 </div>
               </div>
@@ -1360,7 +1390,7 @@
                 aria-disabled="false" data-google-font="Lato">
                 <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_20"
                   style="text-align: left; font-size: 23px; color: rgb(45, 45, 45);" data-bold="inherit"
-                  data-gramm="false" contenteditable="false">2400+ Happy Clients Served Worldwide</h2>
+                  data-gramm="false" contenteditable="false" id="happyclients">2400+ Happy Clients Served Worldwide</h2>
               </div>
               <div class="de elSeperator elMargin0 ui-droppable de-editable" id="divider-55479" data-de-type="divider"
                 data-de-editing="false" data-title="Divider" data-ce="false" data-trigger="none" data-animate="fade"
@@ -1527,9 +1557,7 @@
               <div class="de elVideoWrapper de-video-block elVideoWidth100 elMargin0 ui-droppable de-editable"
                 id="tmp_video-30240-158" data-de-type="video" data-de-editing="false" data-title="video" data-ce="false"
                 data-trigger="none" data-animate="fade" data-delay="500" data-video-type="wistia"
-                style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false"
-                data-wistia-url="https://theimperiumagency.wistia.com/medias/kwx928b5dq"
-                data-cfvimeo-url="https://vimeo.com/539188541">
+                style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
                 <div class="elVideoplaceholder">
                   <div class="elVideoplaceholder_inner"></div>
                 </div>
@@ -1605,35 +1633,35 @@
               aria-disabled="false" data-google-font="Poppins">
               <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_20"
                 style="text-align: left; font-size: 24px; color: rgb(37, 50, 61);" data-bold="inherit"
-                data-gramm="false" contenteditable="false">✔️Online Singing Course: We offer a comprehensive course that
-                goes beyond conventional singing techniques.
+                data-gramm="false" contenteditable="false"><span id="onlinesinging">✔️Online Singing Course: We offer a comprehensive course that
+                goes beyond conventional singing techniques.</span>
                 <div>
                 </div>
-                <div>✔️Highlight: We teach you how to use your voice effectively and expressively, ensuring remarkable
+                <div id="highlightxx">✔️Highlight: We teach you how to use your voice effectively and expressively, ensuring remarkable
                   vocal growth.
                 </div>
-                <div>✔️Effective Use of Voice: Learn how to use your voice to stand out.
+                <div id="effxx">✔️Effective Use of Voice: Learn how to use your voice to stand out.
                 </div>
-                <div>✔️Artistic Expression: Develop your vocal and emotional expression.
+                <div id="artisxx">✔️Artistic Expression: Develop your vocal and emotional expression.
                 </div>
-                <div>✔️Advanced Techniques: Learn advanced vocal techniques.
+                <div id="advxx">✔️Advanced Techniques: Learn advanced vocal techniques.
                 </div>
-                <div>✔️Flexibility: Study at your own pace, wherever and whenever you want, download the exercise
+                <div id="flexxx">✔️Flexibility: Study at your own pace, wherever and whenever you want, download the exercise
                   materials to do wherever and whenever you want.
                 </div>
-                <div>✔️Rich Content: Access video lessons, exercises and study material.
+                <div id="richxx">✔️Rich Content: Access video lessons, exercises and study material.
                 </div>
-                <div>✔️Experience: Ton Ribeiro is a highly experienced vocal coach.
+                <div id="xpxp">✔️Experience: Ton Ribeiro is a highly experienced vocal coach.
                 </div>
-                <div>✔️Proven Results: Many students have achieved success with our course.
+                <div id="provxx">✔️Proven Results: Many students have achieved success with our course.
                 </div>
-                <div>✔️Personalized Support: We offer support for your vocal growth. </div>
+                <div id="persoxx">✔️Personalized Support: We offer support for your vocal growth. </div>
                 <div><br></div>
-                <div>The Endgame? You Master Your Voice, Become a Confident Singer, and Achieve the Singing Ability
+                <div id="endgame">The Endgame? You Master Your Voice, Become a Confident Singer, and Achieve the Singing Ability
                   You've Always Dreamed Of—with the Skills to Wow Anyone Hearing You.
                 </div>
                 <div><br></div>
-                <div>We guarantee results: If you study, do the exercises, and don’t see progress within 90 days, I
+                <div id="grtgrt">We guarantee results: If you study, do the exercises, and don’t see progress within 90 days, I
                   will personally mentor you for another 90 days, and if you still not see progress, which is kind
                   of impossible, we’ll refund all your completely money—with interest.
                 </div>
@@ -1674,28 +1702,27 @@
   <div class="dropZoneForSections ui-droppable" style="display: none;">
     <div class="dropIconr"><i class="fa fa-plus"></i></div>
   </div>
-  
+
   <div
     class="container fullContainer noTopMargin padding40-top padding40-bottom padding40H borderSolid cornersAll radius0 shadow0 emptySection bgCover100 borderLightTopBottom border5px"
     id="section--14938" data-title="Section" data-block-color="0074C7"
-    style="padding-top: 40px; padding-bottom: 40px; outline: none; background-color: rgb(37, 50, 61); color: rgb(255, 255, 255); background-image: url(&quot;//www.theimperiumagency.com/hosted/images/8c/032dff01a64366be645b9931cddb45/Ontwerp-zonder-titel-28-.png&quot;); border-color: rgba(0, 0, 0, 0.227);"
+    style="padding-top: 40px; padding-bottom: 40px; outline: none; background-color: rgb(37, 50, 61); color: rgb(255, 255, 255); border-color: rgba(0, 0, 0, 0.227);"
     data-trigger="none" data-animate="fade" data-delay="500">
-    
+
     <div class="containerInner ui-sortable">
       <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-42882" data-de-type="headline"
-              data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade"
-              data-delay="500" data-gramm="false"
-              style="margin-top: 15px; outline: none; cursor: pointer; font-family: Poppins, Helvetica, sans-serif !important;"
-              data-google-font="Poppins" aria-disabled="false">
-              <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_20"
-                style="text-align: center; font-size: 30px;" data-bold="inherit" data-gramm="false"
-                contenteditable="false">
-                <b>
-                  Step 2 of 2:</b>&nbsp;Fill out the form
-              </h2>
-            </div>
-            <br>
-      <center><iframe src="https://pay.hotmart.com/J94292411O"
+        data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade"
+        data-delay="500" data-gramm="false"
+        style="margin-top: 15px; outline: none; cursor: pointer; font-family: Poppins, Helvetica, sans-serif !important;"
+        data-google-font="Poppins" aria-disabled="false">
+        <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_20"
+          style="text-align: center; font-size: 30px;" data-bold="inherit" data-gramm="false" contenteditable="false">
+          <b>
+            Step 2 of 2:</b>&nbsp;<span id="theform">Fill out the form</span>
+        </h2>
+      </div>
+      <br>
+      <center><iframe id="courselink" src="https://pay.hotmart.com/J94292411O"
           style="position: relative;min-width:640px;height:1260px;"></iframe></center>
     </div>
   </div>
