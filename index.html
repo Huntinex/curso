@@ -538,6 +538,8 @@
         if (lang != "en") {
           $("#courselink").attr('src', "https://pay.hotmart.com/X57289815H");
           $("#courselink2").attr('src', "https://pay.hotmart.com/X57289815H");
+          $("#vsllink").attr('src', "https://fast.wistia.com/embed/medias/b6bxyewvsh.jsonp");
+          $("#vslthumbnail").attr('src', "https://fast.wistia.com/embed/medias/b6bxyewvsh/swatch");
           getLanguage(lang);
           $('#progressbar').text(language.progressbar);
           $('#newsingers').text(language.newsingers);
@@ -1062,7 +1064,7 @@
               </h2>
               <small><br></small>
             </div>
-            <script src="https://fast.wistia.com/embed/medias/b6bxyewvsh.jsonp" async></script>
+            <script id="vsllink" src="https://fast.wistia.com/embed/medias/b6bxyewvsh.jsonp" async></script>
             <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
             <center>
               <div style="max-width: 75%;max-height: 75%;width: 75%;height: 75%;">
@@ -1072,7 +1074,7 @@
                       style="height:100%;position:relative;width:100%">
                       <div class="wistia_swatch"
                         style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                        <img src="https://fast.wistia.com/embed/medias/b6bxyewvsh/swatch"
+                        <img id="vslthumbnail" src="https://fast.wistia.com/embed/medias/b6bxyewvsh/swatch"
                           style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true"
                           onload="this.parentNode.style.opacity=1;" />
                       </div>
