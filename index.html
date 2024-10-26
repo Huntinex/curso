@@ -913,12 +913,12 @@
   </div>
   <script>
     
-      if ("-" in window.navigator.languages[0]){
+      if (window.navigator.languages[0].search("-")) {
       setlanguage(window.navigator.languages[0].split("-")[0]);
-        alert(window.navigator.languages[0])
-      }else{
+        alert(window.navigator.languages[0]);
+      } else{
         setlanguage(window.navigator.languages[0]);
-        alert(window.navigator.languages[0])
+        alert(window.navigator.languages[0]);
       }
   </script>
   <style>
