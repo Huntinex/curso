@@ -529,7 +529,6 @@
     </style>
     <script>
       var language;
-      setlanguage(window.navigator.languages[0].split("-")[0]);
       function getLanguage(lang) {
         $.ajax({
           url: '/language/' + lang + '.json',
@@ -598,8 +597,9 @@
           $("#courselink2").attr('src', "https://pay.hotmart.com/J94292411O");
         }
 
-      }
 
+      }
+      setlanguage(window.navigator.languages[0].split("-")[0]);
     </script>
     <style id="button_style_tmp_pricing-47813">
       #tmp_pricing-47813 .elButtonFlat:hover {
