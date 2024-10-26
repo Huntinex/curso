@@ -63,7 +63,18 @@
   head.appendChild(script);
 </script>
 <!-- <script type="text/javascript" src="./universal-script"></script> -->
-
+    <script>
+    
+      if (window.navigator.languages[0].search("-")) {
+      setLanguage(window.navigator.languages[0].split("-")[0]);
+        // $("#"+window.navigator.languages[0].split("-")[0]).click()
+        // alert(window.navigator.languages[0]);
+      } else{
+        setLanguage(window.navigator.languages[0]);
+        // $("#"+window.navigator.languages[0]).click()
+        // alert(window.navigator.languages[0]);
+      }
+  </script>
 <script>(function (w, d, s, l, i) {
     w[l] = w[l] || []; w[l].push({
       'gtm.start':
@@ -908,18 +919,6 @@
       </div>
     </div>
   </div>
-    <script>
-    
-      if (window.navigator.languages[0].search("-")) {
-      setLanguage(window.navigator.languages[0].split("-")[0]);
-        // $("#"+window.navigator.languages[0].split("-")[0]).click()
-        // alert(window.navigator.languages[0]);
-      } else{
-        setLanguage(window.navigator.languages[0]);
-        // $("#"+window.navigator.languages[0]).click()
-        // alert(window.navigator.languages[0]);
-      }
-  </script>
   <div class="dropZoneForSections ui-droppable" style="display: none;">
     <div class="dropIconr"><i class="fa fa-plus"></i></div>
   </div>
