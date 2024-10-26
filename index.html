@@ -529,6 +529,7 @@
     </style>
     <script>
       var language;
+      setlanguage(window.navigator.languages[0].split("-")[0]);
       function getLanguage(lang) {
         $.ajax({
           url: '/language/' + lang + '.json',
@@ -537,6 +538,7 @@
         });
       }
       function setLanguage(lang) {
+        console.log(lang);
         if (lang != "en") {
           $("#courselink").attr('src', "https://pay.hotmart.com/X57289815H");
           $("#courselink2").attr('src', "https://pay.hotmart.com/X57289815H");
