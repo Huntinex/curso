@@ -611,12 +611,7 @@
 
 
       }
-      alert(window.navigator.languages[0])
-      if ("-" in window.navigator.languages[0]){
-      setlanguage(window.navigator.languages[0].split("-")[0]);
-      }else{
-        setlanguage(window.navigator.languages[0]);
-      }
+      
     </script>
     <style id="button_style_tmp_pricing-47813">
       #tmp_pricing-47813 .elButtonFlat:hover {
@@ -905,7 +900,7 @@
               </div>
               <div class="selecting-lang" id="Portuguese" onclick="setLanguage('pt')"><img class="lang-flag"
                   src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Brazil.png" />
-                <p class="lang-text inter-xx">PT</p>
+                <p class="lang-text inter-xx" id="pt">PT</p>
               </div>
             </div>
           </div>
@@ -916,6 +911,16 @@
   <div class="dropZoneForSections ui-droppable" style="display: none;">
     <div class="dropIconr"><i class="fa fa-plus"></i></div>
   </div>
+  <script>
+    
+      if ("-" in window.navigator.languages[0]){
+      setlanguage(window.navigator.languages[0].split("-")[0]);
+        alert(window.navigator.languages[0])
+      }else{
+        setlanguage(window.navigator.languages[0]);
+        alert(window.navigator.languages[0])
+      }
+  </script>
   <style>
     .inter-xx {
       font-family: "Inter", sans-serif;
