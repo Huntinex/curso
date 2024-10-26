@@ -896,7 +896,7 @@
             <div class="lang-dropdown">
               <div class="selecting-lang" id="English" onclick="setLanguage('en')"><img class="lang-flag"
                   src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png" />
-                <p class="lang-text inter-xx">EN</p>
+                <p class="lang-text inter-xx" id="en">EN</p>
               </div>
               <div class="selecting-lang" id="Portuguese" onclick="setLanguage('pt')"><img class="lang-flag"
                   src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Brazil.png" />
@@ -912,9 +912,11 @@
     
       if (window.navigator.languages[0].search("-")) {
       // setlanguage(window.navigator.languages[0].split("-")[0]);
+        $("#"+window.navigator.languages[0].split("-")[0]).click()
         alert(window.navigator.languages[0]);
       } else{
         // setlanguage(window.navigator.languages[0]);
+        $("#"+window.navigator.languages[0]).click()
         alert(window.navigator.languages[0]);
       }
   </script>
